@@ -15,8 +15,7 @@ const Card = () => {
   useImagePreloader([defaultLogo, defaultPortrait]);
 
   return (
-    <motion.div
-      initial={{opacity: 0.5, scale: 0.9}} whileInView={{opacity: 1, scale: 1, transition: {duration: 1}}} 
+    <div
       className="mx-10 md:mx-0 w-full md:w-3/4 xl:w-1/2 rounded-3xl aspect-[55/90] md:aspect-[90/55] [perspective:1000px]"
     >
       <div
@@ -77,7 +76,7 @@ const Card = () => {
             </button>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
