@@ -2,7 +2,6 @@ import React from 'react'
 import Card from '../Card/Card'
 import bg from '../../assets/bg.jpg'
 import { useImagePreloader } from '../../hooks/useImagePreloader';
-import { motion } from "framer-motion";
 
 const Hero = () => {
   useImagePreloader([bg]);

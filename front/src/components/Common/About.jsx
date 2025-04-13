@@ -1,17 +1,16 @@
 import React from 'react'
-import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div  
         className='bg-black py-10 text-gray-300 px-3'>
-        <motion.div initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0, transition: {duration: 1}}} className="w-full flex justify-center">
+        <div className="w-full flex justify-center">
             <div className="w-full md:w-3/4 xl:w-1/2 text-center mb-5">
                 <h1 className='text-5xl font-bold'>about us</h1>
                 <h5 className=''>We help you create and share your own digital visit card — fast, simple, and stylish. No design skills needed!</h5>
             </div>
-        </motion.div>
-        <motion.div initial={{opacity: 0, y:-50}} whileInView={{opacity: 1, y:0, transition: {duration: 1}}} className="w-full flex justify-center">
+        </div>
+        <div className="w-full flex justify-center">
             <div className="grid grid-cols-2 lg:grid-cols-4 w-full md:w-3/4 xl:w-1/2 gap-3">
                 <div className="border-2 relative border-gray-300 rounded-3xl p-5 w-full flex flex-col z-10">
                     <p className='flex-1 font-bold text-lg'>Easy Card Builder</p>
@@ -38,7 +37,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     </div>
   )
 }
