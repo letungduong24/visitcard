@@ -7,6 +7,7 @@ import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLink } from "react-icons/fa6";
 import { MdFlipCameraAndroid } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Card = () => {
   const [flipped, setFlipped] = useState(true);
@@ -14,7 +15,8 @@ const Card = () => {
   useImagePreloader([defaultLogo, defaultPortrait]);
 
   return (
-    <div
+    <motion.div
+      initial={{opacity: 0.5, scale: 0.9}} whileInView={{opacity: 1, scale: 1, transition: {duration: 1}}} 
       className="mx-10 md:mx-0 w-full md:w-3/4 xl:w-1/2 rounded-3xl aspect-[55/90] md:aspect-[90/55] [perspective:1000px]"
     >
       <div
@@ -75,7 +77,7 @@ const Card = () => {
             </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
